@@ -14,3 +14,10 @@ sh run_alt.sh
 
 打开网页   http://127.0.0.1:5040/query?q=北京今天天气怎么样
 在Postman测试，体验更好！
+
+
+===核心：
+生成 libs/x64/libxfqa.so 和 xfqa.py _xfqa.cpython-35m-x86_64-linux-gnu.so
+其中： 
+  libxfqa.so： 通过修改aiui_sample代码， 生成的so库
+  xfqa.py _xfqa.cpython-35m-x86_64-linux-gnu.so  是用swig和python distutils 生成的。
