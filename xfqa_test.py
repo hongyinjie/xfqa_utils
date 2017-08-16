@@ -10,14 +10,13 @@ texts = [
     ]
 def test():
     
-    xfqa_utils.xsqa_init()
     for text in texts:
         print("#" * 10)
         print(text)
         print (datetime.datetime.now())
         
         t0 = datetime.datetime.now()
-        ans = xfqa_utils.xfqa2(text)
+        ans = xfqa_utils.QA(text)
         
         t1 = datetime.datetime.now()
         print("ans:" + str(ans))
